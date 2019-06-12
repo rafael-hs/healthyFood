@@ -1,0 +1,50 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Sigmar One', sans-serif;
+}
+
+@font-face {
+    font-family: 'Sigmar One';
+    src: url('../fonts/SigmarOne-Regular.ttf') format('truetype');
+}
+
+main {
+    grid-area: main;
+}
+footer{
+    grid-area: footer;
+}
+
+.comidas {
+    grid-area: comidas;
+}
+
+.prato {
+    grid-area: prato;
+}
+
+body {
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 0.8fr;
+    grid-template-areas: 
+        'comidas comidas'
+        'prato prato';
+}
+
+.comidas{
+    display: flex;
+    flex-direction: row;
+}
+
+.comidas > .item > img{
+    padding: 15px;
+    margin:5px;
+}
+
+.prato > .item > img{
+    padding: 15px;
+    margin:5px;
+}

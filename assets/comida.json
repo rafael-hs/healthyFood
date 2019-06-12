@@ -1,0 +1,122 @@
+[
+    {
+        "Nome": "Arroz",
+        "Calorias": "1,28 kcal",
+        "Pontos": 1,
+        "Carboidratos": "0,28g",
+        "Proteinas": "0,03g",
+        "GordurasTotais": "0g",
+        "GordurasSaturadas": "0g",
+        "FibraAlimentar": "0,2g",
+        "Sodio": "0,01mg",
+        "src": "/imgs/arroz.png"
+    },
+    {
+        "Nome": "Feijão",
+        "Calorias": "12,92 kcal",
+        "Pontos": 2,
+        "Carboidratos": "2,31g",
+        "Proteinas": "0,82g",
+        "GordurasTotais": "0,09",
+        "GordurasSaturadas": "0,02",
+        "FibraAlimentar": "1,45",
+        "Sodio": "0,34mg",
+        "src": "/imgs/feijao.png"
+    },
+    {
+        "Nome": "Macarrão",
+        "Calorias": "1,58 kcal",
+        "Pontos": 0.5,
+        "Carboidratos": "0,31g",
+        "Proteinas": "0,06g",
+        "GordurasTotais": "0,01g",
+        "GordurasSaturadas": "0g",
+        "FibraAlimentar": "0,02g",
+        "Sodio": "0,01mg",
+        "src": "/imgs/macarrao.png"
+    },
+    {
+        "Nome": "Carne Moída Cozida",
+        "Calorias": "2,12 kcal",
+        "Pontos": 1,
+        "Carboidratos": "0g",
+        "Proteinas": "0,27g",
+        "GordurasTotais": "0,11g",
+        "GordurasSaturadas": "0,05g",
+        "FibraAlimentar": "0",
+        "Sodio": "0,52mg",
+        "src": "/imgs/carneMoida.png"
+    },
+    {
+        "Nome": "Batata Frita",
+        "Calorias": "2,8 kcal",
+        "Pontos": -1,
+        "Carboidratos": "0,36g",
+        "Proteinas": "0,04g",
+        "GordurasTotais": "0,13",
+        "GordurasSaturadas": "0g",
+        "FibraAlimentar": "0g",
+        "Sodio": "0mg",
+        "src": "/imgs/batata.png"
+    },
+    {
+        "Nome": "Hambúrguer Frito",
+        "Calorias": "1,78 kcal",
+        "Pontos": -1,
+        "Carboidratos": "0,03g",
+        "Proteinas": "0,2g",
+        "GordurasTotais": "0,1",
+        "GordurasSaturadas": "0,05",
+        "FibraAlimentar": "0,01",
+        "Sodio": "6,64mg",
+        "src": "/imgs/hamburguer.png"
+    },
+    {
+        "Nome": "Brócolis",
+        "Calorias": "0,25 kcal",
+        "Pontos": 3,
+        "Carboidratos": "0,04g",
+        "Proteinas": "0,02g",
+        "GordurasTotais": "0,01g",
+        "GordurasSaturadas": "0g",
+        "FibraAlimentar": "0,03g",
+        "Sodio": "0,02mg",
+        "src": "/imgs/brocolis.png"
+    },
+    {
+        "Nome": "Bolinho de chuva",
+        "Calorias": "2,7 kcal",
+        "Pontos": -2,
+        "Carboidratos": "0,42g",
+        "Proteinas": "0,06g",
+        "GordurasTotais": "0,08g",
+        "GordurasSaturadas": "0,02g",
+        "FibraAlimentar": "0,01g",
+        "Sodio": "0,29mg",
+        "src": "/imgs/bolinhoDeChuva.png"
+    },
+    {
+        "Nome": "Pastel de Carne",
+        "Calorias": "3,88 kcal",
+        "Pontos": -2,
+        "Carboidratos": "0,44g",
+        "Proteinas": "0,1g",
+        "GordurasTotais": "0,2g",
+        "GordurasSaturadas": "0,02g",
+        "FibraAlimentar": "0,01g",
+        "Sodio": "10,4mg",
+        "src": "/imgs/pastel.png"
+    },
+    {
+        "Nome": "Alface",
+        "Calorias": "0,19 kcal",
+        "Pontos": 1.5,
+        "Carboidratos": "0,03g",
+        "Proteinas": "0,01g",
+        "GordurasTotais": "0g",
+        "GordurasSaturadas": "0g",
+        "FibraAlimentar": "0g",
+        "Sodio": "0mg",
+        "src": "/imgs/alface.png"
+    }
+]
