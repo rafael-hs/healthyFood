@@ -33,15 +33,23 @@ body {
         'prato prato';
 }
 
-
 .card {
     display: inline-block;
     vertical-align: top;
     margin: 8px 15px;
-    border: solid 1px #ccc;
-    border-radius: 5px;
-    box-shadow: 0px 4px 20px 0 rgba(0, 0, 0, 0.4);
-    width: 100px;
-    height: 150px;
+    
+    width: 80px;
+    height: 80px;
     padding: 5px;
+}
+
+.comidas > .item > img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 3em;
 }
