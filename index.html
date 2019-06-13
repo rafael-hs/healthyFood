@@ -4,68 +4,50 @@
     <meta charset="UTF-8">
     <title>HealthyFood</title>
     <script src="./assets/js/jquery.js" name="jquery"></script>
+    <script src="./assets/js/jquery-ui.js" name="jqueryUi"></script>
     <script src="./assets/js/axios.js"></script>
     <link rel="stylesheet" href="../assets/css/global.css">
+    <link rel="stylesheet" href="../assets/css/jquery-ui.css">
 </head>
 
 <body>
-    <div id="comidas" class="comidas" dropzone></div>
-    <div id="prato" class="prato" dropzone></div>
+    <h1 class="titulo">HealthyFood</h1>
+    <ul id="comidas" class="comidas connectedSortable"></ul>
+    <ul id="prato" class="prato connectedSortable"></ul>
 
     <script>
         function trazerDados() {
             const dadoComida = '../assets/comida.json'
             axios(dadoComida).then(resp => {
                 const itens = resp.data.reduce(
-                    (html, comida) => html + `<div class="item"><img src="./assets${comida.src}" width="50" height="50"></div>`, ''
+                    (html, comida) => html + `<li class="item card"><img src="./assets${comida.src}" width="50" height="50"></li>`, ''
                 )
                 $('#comidas').html(itens)
             })
             const dadoPrato = '../assets/prato.json'
             axios(dadoPrato).then(resp => {
                 const itens = resp.data.reduce(
-                    (html, prato) => html + `<div class="item"><img src="./assets${prato.src}" width="50" height="50"></div>`, ''
+                    (html, prato) => html + `<li class="item card"><img src="./assets${prato.src}" width="50" height="50"></li>`, ''
                 )
                 $('#prato').html(itens)
             })
         }
-        // function preencherPrato() {
-        //     // $('#comidas').click(e => {
-        //         const items = document.querySelectorAll('[dropzone] .item')
-        //         items.forEach((item, index) => {
-        //             item.draggable = true
-        //             item.id = item.id || `draggable-item-${index}`
-        //             item.ondragstart = e => e.dataTransfer.setData('item-id', e.target.id)
-        //         })
-        //         const dropzones = document.querySelectorAll('[dropzone]')
-        //         dropzones.forEach(dropzone => {
-        //             dropzone.ondragover = e => e.preventDefault()
-        //             dropzone.ondrop = function (e) {
-        //                 const id = e.dataTransfer.getData('item-id')
-        //                 const item = document.getElementById(id)
-        //                 //e.target.appendChild(item)
-        //                 dropzone.appendChild(item)
-        //             }
-        //         })
-
-        //     // })
-
-        // }
-
-        $(function(){
-            $('#comidas').sortable({
-                stop: function(){
-                    $.map($(this).find('div'), function(el){
-                        let tarefaId = el.id;
-                        let tarefaIndex = $(el).index();
-                    })
-                }
+        function moverObjetos() {
+            $(function () {
+                $('#comidas, #prato').sortable({
+                    connectWith: ".connectedSortable",
+                    revert: true
+                }).disableSelection();
             })
-        })
+            $('#comidas > item, #prato item').draggable({
+                connectToSortable: '.connectedSortable',
+                // revert: 'invalid'
+            }).disableSelection()
+        }
 
         trazerDados()
        setInterval(() => {
-        preencherPrato()
+        moverObjetos()
        }, 500); 
     </script>
 </body>

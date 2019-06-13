@@ -3,48 +3,45 @@
     margin: 0;
     font-family: 'Sigmar One', sans-serif;
 }
-
 @font-face {
     font-family: 'Sigmar One';
     src: url('../fonts/SigmarOne-Regular.ttf') format('truetype');
 }
 
-main {
-    grid-area: main;
-}
-footer{
-    grid-area: footer;
-}
-
 .comidas {
+    display: inline-block;
+    background-image: url('../imgs/mesa.png');
+    background-size: cover;
+    background-repeat: no-repeat;
     grid-area: comidas;
+    border: solid 1px #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 4px 20px 0 rgba(0, 0, 0, 0.4);
 }
-
 .prato {
+    display: inline-block;
     grid-area: prato;
 }
-
 body {
     display: grid;
     min-height: 100vh;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.2fr 0.8fr;
+    grid-template-rows: 0.15fr 0.3fr 0.6fr;
     grid-template-areas: 
+        'titulo titulo'
         'comidas comidas'
         'prato prato';
 }
 
-.comidas{
-    display: flex;
-    flex-direction: row;
-}
 
-.comidas > .item > img{
-    padding: 15px;
-    margin:5px;
-}
-
-.prato > .item > img{
-    padding: 15px;
-    margin:5px;
+.card {
+    display: inline-block;
+    vertical-align: top;
+    margin: 8px 15px;
+    border: solid 1px #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 4px 20px 0 rgba(0, 0, 0, 0.4);
+    width: 100px;
+    height: 150px;
+    padding: 5px;
 }
