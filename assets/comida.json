@@ -26,7 +26,7 @@
     {
         "Nome": "Macarrão",
         "Calorias": "1,58 kcal",
-        "Pontos": 0.5,
+        "Pontos": -1,
         "Carboidratos": "0,31g",
         "Proteinas": "0,06g",
         "GordurasTotais": "0,01g",
@@ -84,18 +84,6 @@
         "src": "/imgs/brocolis.png"
     },
     {
-        "Nome": "Bolinho de chuva",
-        "Calorias": "2,7 kcal",
-        "Pontos": -2,
-        "Carboidratos": "0,42g",
-        "Proteinas": "0,06g",
-        "GordurasTotais": "0,08g",
-        "GordurasSaturadas": "0,02g",
-        "FibraAlimentar": "0,01g",
-        "Sodio": "0,29mg",
-        "src": "/imgs/bolinhoDeChuva.png"
-    },
-    {
         "Nome": "Pastel de Carne",
         "Calorias": "3,88 kcal",
         "Pontos": -2,
@@ -110,7 +98,7 @@
     {
         "Nome": "Alface",
         "Calorias": "0,19 kcal",
-        "Pontos": 1.5,
+        "Pontos": 2,
         "Carboidratos": "0,03g",
         "Proteinas": "0,01g",
         "GordurasTotais": "0g",
