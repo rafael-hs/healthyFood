@@ -63,7 +63,7 @@ function contatorDePontos() {
     let a = pontuacaoAtual.childNodes[0].innerText
     let pontAtual = parseInt(a)
     if (pontAtual <= 0)
-        $('#estado').html(`<p class="texto">Ruím</p>`)
+        $('#estado').html(`<p class="texto">Ruim</p>`)
     else if (pontAtual > 0 && pontAtual < 2)
         $('#estado').html(`<p class="texto">Bom</p>`)
     else 
