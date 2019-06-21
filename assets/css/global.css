@@ -15,10 +15,11 @@
     background-repeat: no-repeat;
     grid-area: comidas;
     border: solid 1px #ccc;
-    border-radius: 5px;
+    border-radius: 15px;
     box-shadow: 0px 4px 20px 0 rgba(0, 0, 0, 0.4);
 }
 .prato {
+    border-radius: 15px;
     background-image: url('../imgs/prato.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -39,7 +40,7 @@
     grid-template-columns: 0.30fr 0.40fr 0.09fr 0.15fr;
     grid-template-rows: 1fr;
     grid-template-areas: 
-        'nada estado score pontuacao'
+        'estado emoji score pontuacao'
 }
 
 .resultado > #informacoes {
@@ -48,13 +49,13 @@
 
 body {
     background: rgb(2,0,36);
-    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(5,35,63,1) 5%, rgba(8,83,101,1) 13%, rgba(2,178,215,1) 80%, rgba(0,212,255,1) 100%);
+    background: linear-gradient(0deg, rgb(26, 23, 83) 0%, rgb(35, 97, 112) 3%, rgba(7,107,130,1) 6%, rgba(2,178,215,1) 25%, rgb(38, 80, 119) 96%, rgba(0,212,255,1) 100%);
     display: grid;
     min-height: 100vh;
     grid-template-columns: 1fr;
     grid-template-rows: 0.15fr 0.25fr 0.5fr 0.1fr;
     grid-template-areas: 
-        'titulo titulo'
+        'titulo titulo2'
         'comidas comidas'
         'prato prato'
         'resultado resultado';
@@ -65,8 +66,8 @@ body {
     vertical-align: top;
     margin: 8px 15px;
     
-    width: 130px;
-    height: 130px;
+    width: 100px;
+    height: 100px;
     padding: 5px;
 }
 
@@ -76,12 +77,39 @@ body {
     height: 100%;
 }
 
+.combinacoes {
+    width: 100%;
+    height: 100%;
+}
+
+.btCombinacoes {
+    margin: 20px 10px;
+    position: relative;
+    border-radius: 15px;
+    background-color: rgb(98, 134, 207);
+    width: 40px;
+    height: 30px;
+}
+
+.modal {
+    border-radius: 12px;
+    background-color: rgb(81, 105, 153);
+}
+
+#titulo {
+    grid-area: titulo;
+}
+
 .titulo {
+    width: 100%;
+    height: 100%;
     text-align: center;
     font-size: 3em;
 }
 
 .pontuacao {
+    width: 100%;
+    height: 100%;
     grid-area: pontuacao;
 }
 
@@ -94,10 +122,23 @@ body {
 }
 
 .estado > .texto {
+    padding-top: 8px;
+    padding-left: 15px;
     font-size: 2.5em;
 }
 
 .score {
+    width: 100%;
+    height: 100%;
     grid-area: score;
     font-size: 2.5em;
+}
+
+.emoji {
+    grid-area: emoji;
+}
+
+.emoji > img {
+    margin-left:60px; 
+    margin-top:7px; 
 }

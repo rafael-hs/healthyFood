@@ -9,16 +9,42 @@
     <link rel="stylesheet" href="../assets/css/global.css">
     <link rel="stylesheet" href="./assets/js/global.js">
     <link rel="stylesheet" href="../assets/css/lib/jquery-ui.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
 </head>
 
 <body>
-    <p class="titulo">HealthyFood</p>
+    <div id="combinacoes" class="combinacoes">
+        <button id="btCombinacoes" class="btCombinacoes" onclick="document.getElementById('id01').style.display='block'"
+            class="w3-button">?</button>
+    </div>
+
+    <div id="id01" class="w3-modal">
+        <div class="w3-modal-content modal">
+            <div class="w3-container modal ">
+                <span onclick="document.getElementById('id01').style.display='none'"
+                    class="w3-button w3-display-topright modal">&times;</span>
+                <h1>Combinações nutritivas</h1>
+                <h2><img src="./assets/imgs/arroz.png" height="50px" width="50px"> + <img src="./assets/imgs/feijao.png" height="50px" width="50px"> + <img src="./assets/imgs/carneMoida.png" height="50px" width="50px"></h2>
+                <h2><img src="./assets/imgs/arroz.png" height="50px" width="50px"> + <img src="./assets/imgs/brocolis.png" height="50px" width="50px"> + <img src="./assets/imgs/carneMoida.png" height="50px" width="50px"></h2>
+                <h2><img src="./assets/imgs/alface.png" height="50px" width="50px"> + <img src="./assets/imgs/arroz.png" height="50px" width="50px"> + <img src="./assets/imgs/brocolis.png" height="50px" width="50px"></h2>
+                <h1>Combinações gordurosas</h1>
+                <h2><img src="./assets/imgs/batata.png" height="50px" width="50px"> + <img src="./assets/imgs/hamburguer.png" height="50px" width="50px"> + <img src="./assets/imgs/pastel.png" height="50px" width="50px"></h2>
+                <h2><img src="./assets/imgs/pastel.png" height="50px" width="50px"> + <img src="./assets/imgs/carneMoida.png" height="50px" width="50px"> + <img src="./assets/imgs/batata.png" height="50px" width="50px"></h2>
+            </div>
+        </div>
+    </div>
+
+    <div id="titulo">
+        <p class="titulo">HealthyFood</p>
+    </div>
     <ul id="comidas" class="comidas connectedSortable"></ul>
     <ul id="prato" class="prato connectedSortable"></ul>
 
     <div id="resultado" class="resultado">
         <div id="informacoes"></div>
         <div id="estado" class="estado"></div>
+        <div id="emoji" class="emoji"></div>
         <div id="score" class="score">Score:</div>
         <div id="pontuacao" name="pontuacaoName" class="pontuacao"></div>
     </div>
