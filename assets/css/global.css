@@ -50,6 +50,7 @@
 body {
     background: rgb(2,0,36);
     background: linear-gradient(0deg, rgb(26, 23, 83) 0%, rgb(35, 97, 112) 3%, rgba(7,107,130,1) 6%, rgba(2,178,215,1) 25%, rgb(38, 80, 119) 96%, rgba(0,212,255,1) 100%);
+
     display: grid;
     min-height: 100vh;
     grid-template-columns: 1fr;
