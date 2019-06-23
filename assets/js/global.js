@@ -50,15 +50,15 @@ function mostrarEmoji() {
     }
 
     if (soma == 78)
-        $('#emoji').html(`<img src="../assets/imgs/feliz.png" height="50px" width="50px">`)
+        $('#emoji').html(`<img src="../assets/imgs/feliz.png" height="180px" width="180px">`)
     else if (soma == 143)
-        $('#emoji').html(`<img src="../assets/imgs/feliz.png" height="50px" width="50px">`)
+        $('#emoji').html(`<img src="../assets/imgs/feliz.png" height="180px" width="180px">`)
     else if (soma == 77)
-        $('#emoji').html(`<img src="../assets/imgs/feliz.png" height="50px" width="50px">`)
+        $('#emoji').html(`<img src="../assets/imgs/feliz.png" height="180px" width="180px">`)
     else if (soma == 101)
-        $('#emoji').html(`<img src="../assets/imgs/triste.png" height="50px" width="50px">`)
+        $('#emoji').html(`<img src="../assets/imgs/triste.png" height="180px" width="180px">`)
     else if (soma == 142)
-        $('#emoji').html(`<img src="../assets/imgs/triste.png" height="50px" width="50px">`)
+        $('#emoji').html(`<img src="../assets/imgs/triste.png" height="180px" width="180px">`)
 
     else {
         let itens = $('.prato li').length

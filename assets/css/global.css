@@ -135,11 +135,9 @@ body {
     font-size: 2.5em;
 }
 
-.emoji {
-    grid-area: emoji;
-}
-
 .emoji > img {
-    margin-left:60px; 
-    margin-top:7px; 
+    margin-top: 60px;
+    margin-right: 25px;
+    float: right;
+    
 }
